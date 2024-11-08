@@ -1,5 +1,5 @@
 # OpenCAN
 
 
-Android-App-Name for "Car Scanner"
+Android-App-Name für "Car Scanner"
 > com.ovz.carscanner
