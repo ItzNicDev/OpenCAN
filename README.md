@@ -12,14 +12,14 @@ Bluetooth-Adresse:
 
 
 Android Schritte
-> Developeroptionen aktivieren
-> Bluetooth ausschalten
-> 'HCI Snoop Log' aktivieren
-> Aktionen ausführen
-> Bug Report erstellen
-> Wenn Report fertig 'HCI Snoop Log' deaktivieren
-> Wire Less Debugging Verbindung aufbauen
+- Developeroptionen aktivieren
+- Bluetooth ausschalten
+- 'HCI Snoop Log' aktivieren
+- Aktionen ausführen
+- Bug Report erstellen
+- Wenn Report fertig 'HCI Snoop Log' deaktivieren
+- Wire Less Debugging Verbindung aufbauen
  
 Shell Schritte
-> 'abd pair <ip>:<subnet> <pin>'
-> 'abd bugreport'
+- 'abd pair <ip>:<subnet> <pin>'
+- 'abd bugreport'
