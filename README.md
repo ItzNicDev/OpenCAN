@@ -1,25 +1,18 @@
 # OpenCAN
 
-APK
-> https://car-scanner-elm-obd2.de.uptodown.com/android/download
+Inhaltsverzeichnis
+Einleitung
+
+1.1 Hintergrund und Relevanz des Themas
+1.2 Zielsetzung und Fragestellung
+1.3 Methodik und Aufbau der Arbeit
+Theoretischer Hintergrund
+
+2.1 Definitionen und Grundbegriffe
+2.2 Literaturübersicht und Stand der Forschung
+2.3 Theoretische Ansätze und Modelle
 
 
-Android-App-Name für "Car Scanner"
-> com.ovz.carscanner
 
-Bluetooth-Adresse:
-> 00:1D:A5:07:52:39
-
-
-Android Schritte
-- Developeroptionen aktivieren
-- Bluetooth ausschalten
-- 'HCI Snoop Log' aktivieren
-- Aktionen ausführen
-- Bug Report erstellen
-- Wenn Report fertig 'HCI Snoop Log' deaktivieren
-- Wire Less Debugging Verbindung aufbauen
- 
-Shell Schritte
-- 'abd pair <ip>:<subnet> <pin>'
-- 'abd bugreport'
+Android App:
+(Serial Bluetooth Terminal)[https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal&hl=de]
