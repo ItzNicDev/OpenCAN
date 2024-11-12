@@ -4,6 +4,8 @@
 Android App:
 (Serial Bluetooth Terminal)[https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal&hl=de]
 
+X27 stepper motors
+
 Bluetooth-Kommunikations-Ablauf:
 ```
 > AT
