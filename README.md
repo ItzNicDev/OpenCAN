@@ -4,9 +4,15 @@
 Android App:
 (Serial Bluetooth Terminal)[https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal&hl=de]
 
-X27 stepper motors
 
-Bluetooth-Kommunikations-Ablauf:
+## Material List
+- ESP32/Arduino Uno/Arduino Nano
+- X27 168 Stepper Motor
+- AX1201728SG Driver-IC
+
+[Stepper Motor Anleitung für Treiber](https://guy.carpenter.id.au/gaugette/2017/04/29/switecx25-quad-driver-tests/)
+
+## Bluetooth-Kommunikations-Ablauf:
 ```
 > AT
 > AT+RESET
