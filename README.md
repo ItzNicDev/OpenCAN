@@ -2,6 +2,7 @@
 
 ## Part List
 - 1x ESP32/Arduino Uno/Arduino Nano
+- 1x OBDII Bluetooth Adapter [Amazon Link](https://shorturl.at/WAysj)
 - 3x X27 168 Stepper Motor [Amazon Link](https://shorturl.at/sV0GF)
 - 1x AX1201728SG Driver-IC [Amazon Link](https://shorturl.at/P5nwd)
 - 1x SOP28 zu DIP28 Adapter [Amazon Link](https://shorturl.at/ZedPl)
