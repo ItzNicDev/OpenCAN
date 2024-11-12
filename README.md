@@ -1,10 +1,5 @@
 # OpenCAN
 
-
-Android App:
-(Serial Bluetooth Terminal)[https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal&hl=de]
-
-
 ## Part List
 - 1x ESP32/Arduino Uno/Arduino Nano
 - 3x X27 168 Stepper Motor [Amazon Link](https://shorturl.at/sV0GF)
