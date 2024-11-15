@@ -4,7 +4,9 @@
 #include <Arduino.h>
 #include "CANMessage.h"
 
+
 class ELM327BT {
+
 public:
   //constructor
   ELM327BT(char* bluetoothAdr);
@@ -13,9 +15,12 @@ public:
   void init();
   char* requestValue(MessageType messageType);
 
+
 private:
   char* _bluetoothAdr;
   MessageType _messageType;  
 };
+
+
 
 #endif
