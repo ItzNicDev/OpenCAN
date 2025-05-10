@@ -5,6 +5,7 @@
 
 BluetoothSerial SerialBT;
 
+
 enum SENSOR
 {
   RPM,
@@ -26,7 +27,7 @@ struct OBD_REQUEST
   char high[3];
   char low[3];
 
-  int parsedValue()
+  float parsedValue()
   {
     switch (sensor)
     {
@@ -35,6 +36,8 @@ struct OBD_REQUEST
           ((256 * hexToDecimal(getBytesHigh())) +
            hexToDecimal(getBytesLow())) /
           4);
+    case BOOST:
+      return ((hexToDecimal(getBytesHigh()) / 100.0f) - 1); // kPa in bar
     default:
       return 0;
     }
@@ -54,12 +57,17 @@ struct OBD_REQUEST
     return low;
   }
 
-  static int hexToDecimal(const char *pHex)
+  static float hexToDecimal(const char *pHex)
   {
-    return strtol(pHex, NULL, 16);
+    return (float)strtol(pHex, NULL, 16);
   }
 };
 
+const char *getSimulatedResponse()
+{
+  const char *x = "010B41 0B 1D";
+  return x;
+}
 // Globale Instanz
 OBD_REQUEST rpmRequest("0000", RPM);
 
@@ -71,28 +79,40 @@ String obdMAC = "00:1D:A5:07:52:39";
 
 const char *sendOBDRequest(const char *pPID)
 {
+
   SerialBT.println(pPID);
-  delay(1000);
 
   if (SerialBT.available())
   {
-    String response = SerialBT.readString();
-    // String response = "010C41 0C 10 A2";
-    Serial.println("Antwort erhalten: " + response);
+    String response = SerialBT.readStringUntil('>'); // Lese bis zum '>' Zeichen
+    Serial.println("Antwort erhalten (roh): " + response);
 
     response.replace(" ", "");
-    response.replace("010C", "");
-    response.replace("410C", "");
+    response.replace(pPID, "");
+    response.replace("410B", "");
+    // response.replace("41"+String(pPID).substring(2,3), "");
 
-    strncpy(responseBuffer, response.c_str(), sizeof(responseBuffer) - 1);
+    // Entferne alle Zeichen außer den Hex-Ziffern
+    String hexDigits = "";
+    for (char c : response)
+    {
+      if (isHexadecimalDigit(c))
+      {
+        hexDigits += c;
+      }
+    }
+
+    strncpy(responseBuffer, hexDigits.c_str(), sizeof(responseBuffer) - 1);
     responseBuffer[sizeof(responseBuffer) - 1] = '\0';
+    Serial.println("Antwort bereinigt: " + String(responseBuffer));
     return responseBuffer;
   }
 
   return "";
 }
 
-int executeOBDCall(SENSOR pSensorType)
+// list of all PIDs
+float executeOBDCall(SENSOR pSensorType)
 {
   const char *response;
 
@@ -100,11 +120,23 @@ int executeOBDCall(SENSOR pSensorType)
   {
   case RPM:
     response = sendOBDRequest("010C");
-    rpmRequest = OBD_REQUEST(response, pSensorType);
-    return rpmRequest.parsedValue();
+    break;
+
+  case BOOST:
+    response = sendOBDRequest("010B");
+    break;
+
   default:
-    return 0;
+    response = 0;
+    break;
+    // return 0;
   }
+
+  rpmRequest = OBD_REQUEST(response, pSensorType);
+  Serial.println(rpmRequest.getBytesHigh());
+  Serial.println(rpmRequest.getBytesLow());
+
+  return rpmRequest.parsedValue();
 }
 
 void setupBluetoothComunication()
@@ -143,9 +175,15 @@ void setupBluetoothComunication()
 void setup()
 {
   Serial.begin(115200);
+
   setupBluetoothComunication();
-  int rpmValue = executeOBDCall(RPM);
-  Serial.println("Drehzahl: " + String(rpmValue));
+
+  for (;;)
+  {
+    float rpmValue = executeOBDCall(BOOST);
+    Serial.println("Boost: " + String(rpmValue) + " bar");
+    delay(100);
+  }
 }
 
 void loop()
