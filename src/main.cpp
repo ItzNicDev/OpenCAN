@@ -20,6 +20,7 @@
 #include "Arduino.h"
 #include "X27168Driver.h"
 #include "MappingUtils.h"
+#include "ELM327Driver.h"
 
 // Weak empty variant initialization function.
 // May be redefined by variant files.
@@ -33,22 +34,18 @@ void loop()
 {
 }
 
-X27168Driver motor(945, 14, 16, 17, 18);
 MappingUtils mappingUtils;
+X27168Driver motor(945, 14, 16, 17, 18);
+uint8_t obdAddress[] = {0x00, 0x1D, 0xA5, 0x07, 0x52, 0x39};
+ELM327Driver elm327(obdAddress);
+
 void setup()
 {
   Serial.begin(9600);
-
-  motor.reference();
-  motor.moveToAngle(mappingUtils.boostToDegree(-1));
-  delay(1000);
-  motor.moveToAngle(mappingUtils.boostToDegree(-0.5));
-  delay(1000);
-  motor.moveToAngle(mappingUtils.boostToDegree(0));
-  delay(1000);
-  motor.moveToAngle(mappingUtils.boostToDegree(0.5));
-  delay(1000);
-  motor.moveToAngle(mappingUtils.boostToDegree(1));
+  // elm327.setupBluetoothComunication();
+  float boost = elm327.getResponse(ObdSensorType::Boost);
+  Serial.println("");
+  Serial.println(String(boost) + " bar");
 }
 
 /*
