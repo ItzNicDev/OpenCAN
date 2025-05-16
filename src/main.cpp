@@ -34,6 +34,16 @@ void loop()
 {
 }
 
+float floatMap(float x, float in_min, float in_max, float out_min, float out_max)
+{
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+float boostToDegree(float boost)
+{
+  return floatMap(boost, -1, 1, 43, 221.2);
+}
+
 MappingUtils mappingUtils;
 X27168Driver motor(945, 14, 16, 17, 18);
 uint8_t obdAddress[] = {0x00, 0x1D, 0xA5, 0x07, 0x52, 0x39};
@@ -42,10 +52,20 @@ ELM327Driver elm327(obdAddress);
 void setup()
 {
   Serial.begin(9600);
-  // elm327.setupBluetoothComunication();
-  float boost = elm327.getResponse(ObdSensorType::Boost);
-  Serial.println("");
-  Serial.println(String(boost) + " bar");
+  elm327.setupBluetoothComunication();
+  motor.reference();
+  delay(1000);
+
+  float degree;
+  float boost;
+  for (;;)
+  {
+    boost = elm327.getResponse(ObdSensorType::Boost);
+    Serial.println(String(boost) + " bar");
+    degree = boostToDegree(boost);
+    motor.moveToAngle(degree);
+    delay(25);
+  }
 }
 
 /*
