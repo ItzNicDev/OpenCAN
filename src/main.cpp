@@ -34,14 +34,9 @@ void loop()
 {
 }
 
-float floatMap(float x, float in_min, float in_max, float out_min, float out_max)
+void motorMiddlePosition(X27168Driver _motor)
 {
-  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-}
-
-float boostToDegree(float boost)
-{
-  return floatMap(boost, -1, 1, 43, 221.2);
+  _motor.moveToAngle(158);
 }
 
 MappingUtils mappingUtils;
@@ -52,20 +47,31 @@ ELM327Driver elm327(obdAddress);
 void setup()
 {
   Serial.begin(9600);
-  elm327.setupBluetoothComunication();
+  // elm327.setupBluetoothComunication();
   motor.reference();
   delay(1000);
+  motor.test();
 
-  float degree;
-  float boost;
-  for (;;)
-  {
-    boost = elm327.getResponse(ObdSensorType::Boost);
-    Serial.println(String(boost) + " bar");
-    degree = boostToDegree(boost);
-    motor.moveToAngle(degree);
-    delay(25);
-  }
+
+  delay(1000);
+
+  float boost = 0;
+  float degree = 0;
+  float smoothedDegree = 0;    // Zwischenspeicher für geglätteten Winkel
+  float smoothingFactor = 0.7; // Wie stark geglättet wird (0 = sehr smooth, 1 = direkt)
+
+  // for (;;)
+  // {
+  //   boost = elm327.getResponse(ObdSensorType::Boost);
+
+  //   degree = boostToDegree(boost);
+
+  // smoothedDegree += (degree - smoothedDegree) * smoothingFactor;
+
+  //   motor.moveToAngle(degree);
+
+  //   delay(60);
+  // }
 }
 
 /*

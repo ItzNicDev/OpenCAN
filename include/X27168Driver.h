@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SwitecX25.h>
+#include "MappingUtils.h"
 
 class X27168Driver
 {
@@ -11,9 +12,12 @@ public:
     void moveToAngle(int angle);
     void zero();
     void update();
+    void test();
+
 
 private:
     unsigned char _pin1, _pin2, _pin3, _pin4;
     unsigned int _steps;
     SwitecX25 _motor;
+    MappingUtils _mappingUtils;
 };
