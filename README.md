@@ -18,12 +18,13 @@ The algorithm addresses this by **simulating** the pointer's movement between th
 
     Let $t_{current}$ be the current timestamp within the `loop()` iteration.
     The **progress** through the current interpolation interval is calculated as:
+    
     $$\text{progress} = \frac{t_{current} - t_0}{\text{obdRequestInterval}}$$
     This $\text{progress}$ value ranges from 0 (at the start of the interval, $t_{current} = t_0$) to 1 (at the expected end of the interval, $t_{current} = t_0 + \text{obdRequestInterval}$).
 
     The **interpolated target value** ($V_{interpolated}$) is then calculated using the formula for linear interpolation:
     $$V_{interpolated} = V_0 + (V_1 - V_0) \times \text{progress}$$
 
-3.  **Smooth Motor Control:** This continuously calculated $V_{interpolated}$ is immediately passed to the `motor.setTargetAngle()` method. The `motor.update()` method, which runs in every `loop()` iteration, then moves the pointer smoothly and fluidly towards this constantly updating intermediate target.
+4.  **Smooth Motor Control:** This continuously calculated $V_{interpolated}$ is immediately passed to the `motor.setTargetAngle()` method. The `motor.update()` method, which runs in every `loop()` iteration, then moves the pointer smoothly and fluidly towards this constantly updating intermediate target.
 
 **Result:** The pointer glides evenly from one target to the next, even if the underlying OBD data points are abrupt and retrieved slowly. The movement is no longer solely tied to the latency of the OBD communication but appears fluid and responsive by filling the gaps between actual data points.
