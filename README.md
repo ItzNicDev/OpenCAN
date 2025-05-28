@@ -1,5 +1,5 @@
 
-# OpenCAN ![logo](./assets/logo.svg)
+# OpenCAN <img src="./assets/logo.svg" width="50" height="50" alt="OpenCAN Logo">
 ### Pointer Movement Logic (Interpolation Algorithm)
 
 The core challenge in controlling the pointer was the slow and blocking nature of OBD-II data queries. To ensure a smooth and responsive pointer movement, an interpolation algorithm has been implemented.
