@@ -11,9 +11,9 @@ public:
     void reference();
     void moveToAngle(int angle);
     void zero();
+    void setTargetAngle(float angle);
     void update();
     void test();
-
 
 private:
     unsigned char _pin1, _pin2, _pin3, _pin4;
