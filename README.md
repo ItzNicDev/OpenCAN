@@ -19,10 +19,10 @@
 │   ├── TVS Diode
 │   ├── LED
 │   ├── Buck Converter (12V to 5V)
-|       ├── Fuse (200mA)
-|       ├── Capacitor (470nF 16V)
-|       └── ESP32
-|           ├── Buzzer
+│       ├── Fuse (200mA)
+│       ├── Capacitor (470nF 16V)
+│       └── ESP32
+│           ├── Buzzer
 │           └── X27168
 ```
 
