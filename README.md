@@ -14,6 +14,8 @@
 - 3x M3 Screw
 - 1x OpenCAN custom PCB
 
+## Schematic
+<img src="assets/flow.png"/>
 ## Logic Flow
 <img src="assets/flow.png"/>
 
