@@ -14,6 +14,9 @@
 - 3x M3 Screw
 - 1x OpenCAN custom PCB
 
+## Logic Flow
+<img src="assets/flow.png"/>
+
 ## Electric Flow
 
 ```bash
