@@ -1,17 +1,25 @@
 # OpenCAN
 
-## Part List
-- 1x ESP32/Arduino Uno/Arduino Nano
-- 1x OBDII Bluetooth Adapter [Amazon Link](https://shorturl.at/WAysj) [AliExpress](https://shorturl.at/v9x02)
-- 3x X27 168 Stepper Motor [Amazon Link](https://shorturl.at/sV0GF) [AliExpress](https://shorturl.at/FqCGk)
-- 1x AX1201728SG Driver-IC [Amazon Link](https://shorturl.at/P5nwd) [AliExpress](https://shorturl.at/m2FAD)
-- 1x SOP28 zu DIP28 Adapter [Amazon Link](https://shorturl.at/ZedPl) [AliExpress](https://shorturl.at/1MLg4)
+## Parts List
+- 1x ESP32-DEVKIT-V1 30-Pin
+- 2x Header Socket (15 pins each)
+- 1x Screw Terminal (2 pin)
+- 1x TVS Diode (1N6280A)
+- 1x CN3903 Buck Converter
+- 1x Fuse Holder (glass fuse)
+- 1x Glass Fuse (200mA)
+- 1x 470nF 16V Capacitor
+- 3x M3 Screw
+- 1x OpenCAN custom PCB
 
-## Anleitungen
-- [Stepper Motor Anleitung für Treiber](https://guy.carpenter.id.au/gaugette/2017/04/29/switecx25-quad-driver-tests/)
+## Electric Flows
+Car Battery (12V) - TVS Diode - Buck Converter (12V to 5V) - Fuse (200mA) - Capacitor(470nF 16V) - ESP32:
+-> Buzzer
+-> 6 Pin Connector
 
-## Diagramme
-![Verkabelung X27 168 mit AX1201728SG](https://shorturl.at/Gp5xT)
+Car Battery (12V) - TVS Diode:
+-> 6 Pin Connector
+
 
 ## Bluetooth-Kommunikations-Ablauf:
 ```
