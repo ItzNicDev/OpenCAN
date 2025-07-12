@@ -15,7 +15,7 @@
 - 1x OpenCAN custom PCB
 
 ## Schematic
-<img src="assets/flow.png"/>
+<img src="assets/schematic.png"/>
 ## Logic Flow
 <img src="assets/flow.png"/>
 
