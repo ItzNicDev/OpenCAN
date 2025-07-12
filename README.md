@@ -13,13 +13,18 @@
 - 1x OpenCAN custom PCB
 
 ## Electric Flows
-Car Battery (12V) - TVS Diode - Buck Converter (12V to 5V) - Fuse (200mA) - Capacitor(470nF 16V) - ESP32:
--> Buzzer
--> 6 Pin Connector
 
-Car Battery (12V) - TVS Diode:
--> 6 Pin Connector
-
+```bash
+├── 12V (Car Battery)
+│   ├── TVS Diode
+│   ├── LED
+│   ├── Buck Converter (12V to 5V)
+|       ├── Fuse (200mA)
+|       ├── Capacitor (470nF 16V)
+|       └── ESP32
+|           ├── Buzzer
+│           └── X27168
+```
 
 ## Bluetooth-Kommunikations-Ablauf:
 ```
