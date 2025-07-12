@@ -12,7 +12,7 @@
 - 3x M3 Screw
 - 1x OpenCAN custom PCB
 
-## Electric Flows
+## Electric Flow
 
 ```bash
 ├── 12V (Car Battery)
