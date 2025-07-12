@@ -17,6 +17,9 @@
 ## Schematic
 <img src="assets/schematic.png"/>
 
+## PCB Layout
+<img src="assets/pcb_design"/>
+
 ## Logic Flow
 <img src="assets/flow.png"/>
 
