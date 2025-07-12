@@ -2,6 +2,7 @@
 
 ## Parts List
 - 1x ESP32-DEVKIT-V1 30-Pin
+- 1x x27168 Stepper Motor
 - 2x Header Socket (15 pins each)
 - 1x Screw Terminal (2 pin)
 - 1x TVS Diode (1N6280A)
