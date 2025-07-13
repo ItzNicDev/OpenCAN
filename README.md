@@ -26,7 +26,7 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., en
 * 1x 2-Pin Screw Terminal
 * 3x M3 Screws
 * 1x Custom OpenCAN PCB
-
+* 1x [Custom OpenCAN PCB](#🧾 PCB Layout)
 ---
 
 ## 🔌 Schematic
