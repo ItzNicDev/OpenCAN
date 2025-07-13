@@ -28,7 +28,10 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 * 3x [M3 Threaded heat-set inserts](https://de.aliexpress.com/item/1005006472962973.html?spm=a2g0o.productlist.main.1.687c5125OYvhMS&algo_pvid=aa5009d6-1880-4990-88e9-70ea73f17982&algo_exp_id=aa5009d6-1880-4990-88e9-70ea73f17982-0&pdp_ext_f=%7B%22order%22%3A%226242%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21EUR%214.78%211.75%21%21%215.45%211.99%21%40210391a017523970797643092e154c%2112000037324316041%21sea%21DE%216233624885%21X&curPageLogUid=hB6lhYICHs4k&utparam-url=scene%3Asearch%7Cquery_from%3A)
 * 1x [Custom OpenCAN PCB](#-pcb-layout) (See [Gerber Files](#comming-soon) for further information)
 
-
+### 🧊3D Printed Parts
+* 1x [Gauge Cup](3D_models/Suzuki_Swift_Sport/Gauge_Cup.3mf)
+* 1x [Gauge Adapter Ring](3D_models/Suzuki_Swift_Sport/gauge_adapter_ring.3mf)
+* 1x [X27168 Adapter Plate](3D_models/Suzuki_Swift_Sport/x27168_adapter_plate.3mf)
 ---
 
 ## 🔌 Schematic
