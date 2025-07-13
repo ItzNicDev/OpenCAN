@@ -16,9 +16,9 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., en
 ### Power Supply
 
 * 1x [CN3903 Buck Converter](https://de.aliexpress.com/item/1005003239596512.html?spm=a2g0o.productlist.main.2.1176599feL7O6y&algo_pvid=c9ccdcb8-a0d6-4b6f-8f0f-f2d4d9f27fd4&algo_exp_id=c9ccdcb8-a0d6-4b6f-8f0f-f2d4d9f27fd4-1&pdp_ext_f=%7B%22order%22%3A%2239%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21EUR%210.45%210.45%21%21%213.67%213.67%21%402103868817523963088208918ec918%2112000024801303076%21sea%21DE%216233624885%21X&curPageLogUid=ReUqz2F9l8rW&utparam-url=scene%3Asearch%7Cquery_from%3A) (12V to 5V)
-* 1x TVS Diode (1N6280A)
-* 1x 470nF 16V Capacitor
-* 1x Fuse Holder with 200mA Glass Fuse
+* 1x [TVS Diode](https://www.amazon.com/dp/B079KHXZHK?psc=1&ref_=cm_sw_r_cp_ud_ct_7PG0FPYTPC88BNJHQAFG_1) (1N6280A)
+* 1x [470nF 16V Capacitor](https://de.aliexpress.com/item/1005006075263546.html?spm=a2g0o.productlist.main.23.75b0c9c33Nwfwx&algo_pvid=88c34e0a-e5f4-4e8d-ad2e-4e08d97886e0&algo_exp_id=88c34e0a-e5f4-4e8d-ad2e-4e08d97886e0-20&pdp_ext_f=%7B%22order%22%3A%2214%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21EUR%211.25%211.15%21%21%211.42%211.31%21%40211b6c1917523964976586004e47b6%2112000035613539186%21sea%21DE%216233624885%21X&curPageLogUid=O8hK2Kwejpsj&utparam-url=scene%3Asearch%7Cquery_from%3A)
+* 1x [Fuse Holder](https://www.amazon.com/-/de/dp/B074N1NMMX?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2SBTZKT3UCUQ&dib=eyJ2IjoiMSJ9.nHToP20kJLmZshZ_M0ktCMHD9RnAVLlrLyILkyOg4lknW3CdUnjPFvPezVrIsojj-x5a5LbH_jVb_DVyeVXdUkSCjx9jykRxEJOJs6KnH9VgOINRdQscJS-2rSCpN-LD_lS8hbSwVszTsF0Q66Tp0WjJC0yIHGaB9o4uE6svlwgQr0cxuMLgJ_0RaKG_0Viw.0sutghmPgI0P8xBa6hq1SZ7FRD4MUOUzfyrJNIjGa4g&dib_tag=se&keywords=sicherungshalter+pcb&qid=1752396826&sprefix=sicherungshalter+pc%2Caps%2C221&sr=8-30&xpid=1sYgBZV_GLwhn) with [200mA Glass Fuse](https://www.amazon.com/-/de/dp/B074L7Z342?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13Z6DV9I4ZBOU&dib=eyJ2IjoiMSJ9.LIM3b-PhLp5Zu3U4-TNOuEpsv8Xwz1ZNONAtzY1JwJ57WUKEqeybomcOKXZifb_w91XlQu3fEkOsbyxH2hhwrGBx3Tjdw4O55JKQHAp-My_aW8m_vvN66nC-p8kEwng9VIYlZ-A5hHB-413iY5QFCsBTvZoy2Px10v3INejbJEgXiGtwYZWc_V79y10wjGft_u7EylvF7QK2PQ6ovFoYmjSz5XYwrjMQoylsFJFRfkK3eteB7VwcgbsNa3oiJXc_iVU15HVRm8ROSzFozChDlb8WGJkCRdJcjQ-zGeCRoqM.VSXbczhZPxHbQfqDxj-wtgajRLVUzfQy67ioxIvlZ60&dib_tag=se&keywords=glass+fuse+200ma&qid=1752396753&sprefix=glass+fuse+200m%2Caps%2C245&sr=8-5)
 
 ### Additional Components
 
