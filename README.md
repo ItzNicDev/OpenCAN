@@ -15,7 +15,7 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., en
 
 ### Power Supply
 
-* 1x CN3903 Buck Converter (12V to 5V)
+* 1x [CN3903 Buck Converter](https://de.aliexpress.com/item/1005003239596512.html?spm=a2g0o.productlist.main.2.1176599feL7O6y&algo_pvid=c9ccdcb8-a0d6-4b6f-8f0f-f2d4d9f27fd4&algo_exp_id=c9ccdcb8-a0d6-4b6f-8f0f-f2d4d9f27fd4-1&pdp_ext_f=%7B%22order%22%3A%2239%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21EUR%210.45%210.45%21%21%213.67%213.67%21%402103868817523963088208918ec918%2112000024801303076%21sea%21DE%216233624885%21X&curPageLogUid=ReUqz2F9l8rW&utparam-url=scene%3Asearch%7Cquery_from%3A) (12V to 5V)
 * 1x TVS Diode (1N6280A)
 * 1x 470nF 16V Capacitor
 * 1x Fuse Holder with 200mA Glass Fuse
