@@ -22,10 +22,12 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., en
 
 ### Additional Components
 
-* 2x 15-Pin Header Socket
-* 1x 2-Pin Screw Terminal
-* 3x M3 Screws
+* 2x [15-Pin Header Socket](https://www.amazon.com/-/de/dp/B08DVGCTKT?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=GXC2RSEQUWJJ&dib=eyJ2IjoiMSJ9.F6JUkZTU-stCHqmq-iAIuMEe415-CNFjACNxmpJpwnnrd2NBhMQtE_Y7NULHezwmB6dUmVihC-APueO34gEUiBNyaJpRZ15_bW7hyfXwGCfdxfdZ9eg9GHqSc0hVUuWBBmPzoyE5DJ0V1HI3yE12K4terh7mSPem8wkGEgW4XKGmdQmycc5AUeHSOS2spECj4DL_K3xhjk8wHer8fFmYJRZf6kflPKP6-pJJSFBI0iQ.WnPQ1nI-MXgR_V82nt2K_3ra2xhozqH3QIGRJM6YfT8&dib_tag=se&keywords=pin+header&qid=1752396878&sprefix=pin+header%2Caps%2C221&sr=8-11)
+* 1x [2-Pin Screw Terminal](https://www.amazon.com/-/de/dp/B07QRHJ489?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.uJUPY1QHu_fWzphlgpV5C9rjg_-6kPf9AhSlQLb9Lxgu2EzChWYjN7tAZ6Jf-WzKX6FF6YZppyRDppM2nW7oNz7bXXqc-LfImijAoRrFTN8MkNsacd6QBKhOIWn6UlQmwgnNxaHL3NZc-QQOLkMQ-nxxzz4H-Z1QKORLQTGsf65v5CTFbj2D6kPghJDnSBpAYk3Nm0HYQcfwZZjqPUVJ4k--A6OCZ4J9Wg6OBk0eQ10.crXagmvjyYh5XPkeH17DnOu5PxqpbA1QkpEDMX9H0zw&dib_tag=se&keywords=2-Pin%2BScrew%2BTerminal&qid=1752396909&sr=8-3&th=1)
+* 3x [M3 Screws](https://de.aliexpress.com/item/1005004527586307.html?spm=a2g0o.productlist.main.7.1c0e83pH83pHDK&algo_pvid=ee12877b-5e38-4728-beaa-28559f366fc3&algo_exp_id=ee12877b-5e38-4728-beaa-28559f366fc3-6&pdp_ext_f=%7B%22order%22%3A%226115%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21EUR%210.96%210.96%21%21%211.09%211.09%21%40210385bb17523969573361899e441d%2112000029486656871%21sea%21DE%216233624885%21X&curPageLogUid=n5f3XXGpyUBB&utparam-url=scene%3Asearch%7Cquery_from%3A)
+* 3x [M3 Threaded heat-set inserts](https://de.aliexpress.com/item/1005006472962973.html?spm=a2g0o.productlist.main.1.687c5125OYvhMS&algo_pvid=aa5009d6-1880-4990-88e9-70ea73f17982&algo_exp_id=aa5009d6-1880-4990-88e9-70ea73f17982-0&pdp_ext_f=%7B%22order%22%3A%226242%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21EUR%214.78%211.75%21%21%215.45%211.99%21%40210391a017523970797643092e154c%2112000037324316041%21sea%21DE%216233624885%21X&curPageLogUid=hB6lhYICHs4k&utparam-url=scene%3Asearch%7Cquery_from%3A)
 * 1x [Custom OpenCAN PCB](#-pcb-layout)
+
 
 ---
 
