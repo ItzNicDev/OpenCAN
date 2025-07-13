@@ -9,6 +9,9 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 ## 📑 Table of Contents
 1. 🧰 Hardware Components
 2. 🧊 Prepare 3D Printed Parts
+3. 🪚 Prepare Gauge Enclosure
+4. 🔌 Schematic
+5. ⚡️ PCB-Layout
 ---
 
 ## 🧰 Hardware Components
@@ -43,16 +46,17 @@ Don’t have a 3D printer? No problem! Services like [JLCPCB](https://jlc3dp.com
 
 ---
 
-## 🧊 Prepare 3D Printed Parts
+## 🧊 Prepare 3D Printed Part
 This part consists of melting the threaded heat-set inserts (M2) into the X27168 adapter plate both top and bottom and mounting the X27168 step motor with the M2 screws.
 
 <img src="assets/assembly_stepper_mount.png" width=400/>
 
 ---
 
-## 🧊 Prepare Gauge Enclosure
-
-
+## 🪚 Prepare Gauge Enclosure
+* TODO
+  
+---
 
 
 ## 🔌 Schematic
@@ -61,7 +65,7 @@ This part consists of melting the threaded heat-set inserts (M2) into the X27168
 
 ---
 
-## 🧾 PCB Layout
+## ⚡️ PCB-Layout
 
 ![PCB Design](assets/pcb_design.png)
 
