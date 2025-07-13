@@ -10,8 +10,7 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 1. 🧰 Hardware Components
 2. 🧊 Prepare 3D Printed Parts
 3. 🪚 Prepare Gauge Enclosure
-4. 🔌 Schematic
-5. ⚡️ PCB-Layout
+4. ⚡️ Custom OpenCAN PCB
 ---
 
 ## 🧰 Hardware Components
@@ -57,14 +56,14 @@ This part consists of melting the **threaded heat-set inserts** (M2) into the [X
   
 ---
 
+## ⚡️ Custom OpenCAN PCB
+### Schematic
 
-## 🔌 Schematic
-
-![Schematic](assets/schematic.png)
+<img src="assets/schematic.png" width=400 />
 
 ---
 
-## ⚡️ PCB-Layout
+### PCB-Layout
 
 ![PCB Design](assets/pcb_design.png)
 
