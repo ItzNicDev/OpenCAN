@@ -1,67 +1,108 @@
-
 # OpenCAN
 
-## Parts List
-- 1x ESP32-DEVKIT-V1 30-Pin
-- 1x x27168 Stepper Motor
-- 2x Header Socket (15 pins each)
-- 1x Screw Terminal (2 pin)
-- 1x TVS Diode (1N6280A)
-- 1x CN3903 Buck Converter
-- 1x Fuse Holder (glass fuse)
-- 1x Glass Fuse (200mA)
-- 1x 470nF 16V Capacitor
-- 3x M3 Screw
-- 1x OpenCAN custom PCB
+## 🔍 Project Overview
 
-## Schematic
-<img src="assets/schematic.png"/>
+OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., engine RPM) via Bluetooth and drives an analog pointer using a stepper motor. In a world where dashboards are becoming increasingly digital, OpenCAN revives the tactile, satisfying experience of real analog movement—because sometimes, a physical needle sweeping across a dial just feels more alive than pixels on a screen. The goal is to create smooth and responsive pointer movement despite delays in OBD-II data retrieval.
 
-## PCB Layout
-<img src="assets/pcb_design.png"/>
+---
 
-## Logic Flow
-<img src="assets/flow.png"/>
+## 🧰 Hardware Components
 
-## Electric Flow
+### Core Modules
 
-```bash
-├── 12V (Car Battery)
-│   ├── TVS Diode
-│   ├── LED
-│   ├── Buck Converter (12V to 5V)
-│       ├── Fuse (200mA)
-│       ├── Capacitor (470nF 16V)
-│       └── ESP32
-│           ├── Buzzer
-│           └── X27168
+* 1x ESP32-DEVKIT-V1 (30-Pin)
+* 1x X27168 Stepper Motor
+
+### Power Supply
+
+* 1x CN3903 Buck Converter (12V to 5V)
+* 1x TVS Diode (1N6280A)
+* 1x 470nF 16V Capacitor
+* 1x Fuse Holder with 200mA Glass Fuse
+
+### Additional Components
+
+* 2x 15-Pin Header Socket
+* 1x 2-Pin Screw Terminal
+* 3x M3 Screws
+* 1x Custom OpenCAN PCB
+
+---
+
+## 🔌 Schematic
+
+![Schematic](assets/schematic.png)
+
+---
+
+## 🧾 PCB Layout
+
+![PCB Design](assets/pcb_design.png)
+
+---
+
+## ⚡ Electrical Flow Diagram
+
+```text
+12V (Car Battery)
+├── TVS Diode
+├── LED (optional)
+├── Buck Converter (12V → 5V)
+│   ├── Fuse (200mA)
+│   ├── Capacitor (470nF)
+│   └── ESP32
+│       ├── Buzzer
+│       └── Stepper Motor (X27168)
 ```
 
-## Pointer Movement Logic (Interpolation Algorithm)
+---
 
-The core challenge in controlling the pointer was the slow and blocking nature of OBD-II data queries. To ensure a smooth and responsive pointer movement, an interpolation algorithm has been implemented.
+## 🔁 Pointer Movement Logic (Interpolation Algorithm)
 
-**Problem:** OBD-II queries via Bluetooth (ELM327) can block the microcontroller for a significant duration (e.g., 80-150ms). During this blockage, the motor cannot be updated, leading to jerky motion and preventing the pointer from reacting quickly to sudden data changes.
+### ⚠️ The Problem
 
-**Solution (Linear Interpolation):**
-The algorithm addresses this by **simulating** the pointer's movement between the "actual" OBD data points. It does this by continuously calculating intermediate target values and sending them to the motor.
+OBD-II data via Bluetooth (e.g., ELM327) introduces blocking delays (typically 80–150 ms). During this blocking time, the microcontroller can't update the motor, resulting in jerky and unresponsive pointer behavior.
 
-1.  **Periodic, Blocking Data Fetch:** At a fixed interval, defined by `obdRequestInterval` (e.g., 150ms), a new, smoothed target value is retrieved from the OBD adapter. This step temporarily blocks the microcontroller. When a new value is successfully obtained:
-    * The **Start Point** for interpolation, $V_0$ (`lastObdTargetDegree`), is set to the value the pointer was aiming for at the beginning of the current interval.
-    * The **End Point** for interpolation, $V_1$ (`nextObdTargetDegree`), is set to the newly received and smoothed target value.
-    * The timestamp of this update, $t_0$, is recorded (`lastObdRequestTime`).
+### 💡 The Solution: Linear Interpolation
 
-2.  **Continuous Interpolation:** In every `loop()` iteration where the microcontroller *not* blocked by the OBD query, the algorithm calculates an **intermediate target value** ($V_{interpolated}$). This calculation ensures the pointer moves smoothly from $V_0$ to $V_1$ over the duration of the `obdRequestInterval`.
+To solve this, OpenCAN simulates smooth transitions between OBD data points using linear interpolation:
 
-    Let $t_{current}$ be the current timestamp within the `loop()` iteration.
-    The **progress** through the current interpolation interval is calculated as:
-    
-    $$\text{progress} = \frac{t_{current} - t_0}{\text{obdRequestInterval}}$$
-    This $\text{progress}$ value ranges from 0 (at the start of the interval, $t_{current} = t_0$) to 1 (at the expected end of the interval, $t_{current} = t_0 + \text{obdRequestInterval}$).
+#### 1. Periodic, Blocking Data Fetch
 
-    The **interpolated target value** ($V_{interpolated}$) is then calculated using the formula for linear interpolation:
-    $$V_{interpolated} = V_0 + (V_1 - V_0) \times \text{progress}$$
+* A new target value is fetched every `obdRequestInterval` (e.g., 150ms)
+* When new data arrives:
 
-4.  **Smooth Motor Control:** This continuously calculated $V_{interpolated}$ is immediately passed to the `motor.setTargetAngle()` method. The `motor.update()` method, which runs in every `loop()` iteration, then moves the pointer smoothly and fluidly towards this constantly updating intermediate target.
+  * Start point (`V0`) is set to the previous target value
+  * End point (`V1`) is the newly received value
+  * Start time (`t0`) is recorded
 
-**Result:** The pointer glides evenly from one target to the next, even if the underlying OBD data points are abrupt and retrieved slowly. The movement is no longer solely tied to the latency of the OBD communication but appears fluid and responsive by filling the gaps between actual data points.
+#### 2. Continuous Interpolation in Loop
+
+* On every iteration of the `loop()`, if not blocked by data fetch:
+
+  * Calculate progress:
+
+    ```
+    progress = (currentTime - t0) / obdRequestInterval
+    ```
+  * Calculate interpolated target:
+
+    ```
+    V_interpolated = V0 + (V1 - V0) * progress
+    ```
+  * Send `V_interpolated` to `motor.setTargetAngle()`
+  * `motor.update()` ensures the motor continuously moves towards this value
+
+### ✅ Result
+
+* The pointer moves smoothly between data points
+* Movement appears fluid and responsive, independent of the actual data delay
+
+---
+
+## 🧠 Future Improvements (optional)
+
+* Support for multiple gauges
+* Add OLED/LCD display for digital readouts
+* Log OBD data to SD card
+* Wi-Fi OTA updates
