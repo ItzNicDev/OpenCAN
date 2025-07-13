@@ -65,9 +65,8 @@ Cut along the marked line with a dremel to separate the glass part from the rest
 
 Take your unit from before and carefully lift the plastic sheet scale at one of the red marked tabs to remove it completely.
 
-<img src="assets/gauge_lashes_guid" width=400 />
+<img src="assets/gauge_lashes_guid.png" width=400 />
 
-<img src="assets/gauge_lashes_guid" width=400 />
 
 
 ## ⚡️ Custom OpenCAN PCB
