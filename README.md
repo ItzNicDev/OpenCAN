@@ -68,6 +68,8 @@ This part consists of melting the **threaded heat-set inserts** (M2) into the [X
 
 ---
 
+### Ordering
+The custom pcb can be ordered from manufacturers such as [JLCPCB](https://cart.jlcpcb.com/quote?spm=Jlcpcb.Homepage.1006). In the case of [JLCPCB](https://cart.jlcpcb.com/quote?spm=Jlcpcb.Homepage.1006), it is recommended to choose the lead-free HASL for the surface finish for health reasons. The PCB color can also be selected, but this may incur additional costs. Also make sure that a PCB thickness of 1.6 mm is selected
 ## ⚡ Electrical Flow Diagram
 
 ```text
