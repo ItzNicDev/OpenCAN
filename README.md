@@ -102,9 +102,5 @@ To solve this, OpenCAN simulates smooth transitions between OBD data points usin
 
 ---
 
-## 🧠 Future Improvements (optional)
-
-* Support for multiple gauges
-* Add OLED/LCD display for digital readouts
-* Log OBD data to SD card
-* Wi-Fi OTA updates
+## 🏃 Code-Flow-Diagram
+<img src="assets/flow.png" />
