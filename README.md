@@ -32,10 +32,9 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 * 1x [Gauge Cup](3D_models/Suzuki_Swift_Sport/Gauge_Cup.3mf)
 * 1x [Gauge Adapter Ring](3D_models/Suzuki_Swift_Sport/gauge_adapter_ring.3mf)
 * 1x [X27168 Adapter Plate](3D_models/Suzuki_Swift_Sport/x27168_adapter_plate.3mf)
+
+Don’t have a 3D printer? No problem! Services like JLCPCB now offer 3D printing too – you can upload the models directly and have them printed and shipped to you. Just make sure to choose a heat-resistant material since temperatures inside a car can get pretty high, especially in summer.
   
-Don’t have a 3D printer? No problem!
-Services like JLCPCB now offer 3D printing too – you can upload the models directly and have them printed and shipped to you.
-Just make sure to choose a heat-resistant material since temperatures inside a car can get pretty high, especially in summer.
 ---
 
 ## 🔌 Schematic
