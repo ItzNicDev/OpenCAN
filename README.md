@@ -2,7 +2,7 @@
 
 ## 🔍 Project Overview
 
-OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., engine RPM) via Bluetooth and drives an analog pointer using a stepper motor. In a world where dashboards are becoming increasingly digital, OpenCAN revives the tactile, satisfying experience of real analog movement—because sometimes, a physical needle sweeping across a dial just feels more alive than pixels on a screen. The goal is to create smooth and responsive pointer movement despite delays in OBD-II data retrieval.
+OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., turbo boost or engine rpm) via Bluetooth and drives an analog pointer using a stepper motor. In a world where dashboards are becoming increasingly digital, OpenCAN revives the tactile, satisfying experience of real analog movement—because sometimes, a physical needle sweeping across a dial just feels more alive than pixels on a screen. The goal is to create smooth and responsive pointer movement despite delays in OBD-II data retrieval.
 
 ---
 
