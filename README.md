@@ -67,6 +67,21 @@ Take your unit from before and carefully lift the plastic sheet scale at one of 
 
 <img src="assets/gauge_lashes_guid.png" width=400 />
 
+---
+
+Now that the plastic sheet scale has been removed, 2 screws will appear. Unscrew these and you will notice that the circuit board (white) and the rear brass part are now detached from the rest. The brass part is no longer important for us and has no further use.
+
+<img src="" width=400 />
+
+---
+
+Now the plastic sheet scale, the plastic cage (black plastic with conical top in the middle) and the pcb (background lighting) can be combined with the previously assembled adapter plate.
+
+<img src="" width=400 />
+
+---
+
+
 
 
 ## ⚡️ Custom OpenCAN PCB
