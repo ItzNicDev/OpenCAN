@@ -57,9 +57,18 @@ Remove the nuts marked in the picture
 <img src="assets/remove_nuts_guid.png" width=400/>
 
 ---
-Cut along the marked line with a dremel to separate the glass part from the rest. Be careful not to scratch the front of the glass while cutting. It helps to cover it with masking tape.
+Cut along the marked line with a dremel to separate the glass part from the rest. Carefully remove the unit from the cut-open enclosure and put it away in the meantime and sand the rough edges of the enclosure. Be careful not to scratch the front of the glass while cutting and sanding. It helps to cover it with masking tape.
 
 <img src="assets/cut_guage_enclosure_guid.png" width=400 />
+
+---
+
+Take your unit from before and carefully lift the plastic sheet scale at one of the red marked tabs to remove it completely.
+
+<img src="assets/gauge_lashes_guid" width=400 />
+
+<img src="assets/gauge_lashes_guid" width=400 />
+
 
 ## ⚡️ Custom OpenCAN PCB
 ### Schematic
