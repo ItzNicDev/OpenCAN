@@ -55,7 +55,11 @@ This part consists of melting the **threaded heat-set inserts** (M2) into the [X
 Remove the nuts marked in the picture
 
 <img src="assets/remove_nuts_guid.png" width=400/>
+
 ---
+Cut along the marked line with a dremel to separate the glass part from the rest. Be careful not to scratch the front of the glass while cutting. It helps to cover it with masking tape.
+
+<img src="" width=400 />
 
 ## ⚡️ Custom OpenCAN PCB
 ### Schematic
