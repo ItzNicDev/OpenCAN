@@ -38,15 +38,15 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 
 ### 🧊3D Printed Parts
 * 1x [Gauge Cup](3D_models/Suzuki_Swift_Sport/Gauge_Cup.3mf)
-* 1x [Gauge Adapter Ring](3D_models/Suzuki_Swift_Sport/gauge_adapter_ring.3mf)
-* 1x [X27168 Adapter Plate](3D_models/Suzuki_Swift_Sport/x27168_adapter_plate.3mf)
+* 1x [Gauge Adapter Ring](3D_models/gauge_adapter_ring.3mf)
+* 1x [X27168 Adapter Plate](3D_models/x27168_adapter_plate.3mf)
 
 Don’t have a 3D printer? No problem! Services like [JLCPCB](https://jlc3dp.com/3d-printing-quote) now offer 3D printing too – you can upload the models directly and have them printed and shipped to you. Just make sure to choose a heat-resistant material since temperatures inside a car can get pretty high, especially in summer.
 
 ---
 
 ## 🧊 Prepare 3D Printed Part
-This part consists of melting the **threaded heat-set inserts** (M2) into the **X27168 adapter plate** both top and bottom and mounting the **X27168** step motor with the **M2 screws**.
+This part consists of melting the **threaded heat-set inserts** (M2) into the [X27168 adapter plate](3D_models/x27168_adapter_plate.3mf) both top and bottom and mounting the **X27168** step motor with the **M2 screws**.
 
 <img src="assets/assembly_stepper_mount.png" width=400/>
 
