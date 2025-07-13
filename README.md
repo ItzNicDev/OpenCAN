@@ -45,7 +45,7 @@ Don’t have a 3D printer? No problem! Services like [JLCPCB](https://jlc3dp.com
 
 ---
 
-## 🧊 Prepare 3D Printed Part
+## 🧊 Prepare 3D Printed Adapter Plate
 This part consists of melting the **threaded heat-set inserts** (M2) into the [X27168 adapter plate](3D_models/x27168_adapter_plate.3mf) both top and bottom and mounting the **X27168** step motor with the **M2 screws**.
 
 <img src="assets/assembly_stepper_mount.png" width=400/>
