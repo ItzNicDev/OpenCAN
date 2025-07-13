@@ -52,8 +52,8 @@ This part consists of melting the **threaded heat-set inserts** (M2) into the [X
 ---
 
 ## 🪚 Prepare Gauge Enclosure
-* TODO
-  
+Remove the nuts marked in the picture
+<img src="assets/remove_nuts_guid.png" />
 ---
 
 ## ⚡️ Custom OpenCAN PCB
