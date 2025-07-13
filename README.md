@@ -59,7 +59,7 @@ Remove the nuts marked in the picture
 ---
 Cut along the marked line with a dremel to separate the glass part from the rest. Be careful not to scratch the front of the glass while cutting. It helps to cover it with masking tape.
 
-<img src="" width=400 />
+<img src="assets/cut_guage_enclosure_guid.png" width=400 />
 
 ## ⚡️ Custom OpenCAN PCB
 ### Schematic
