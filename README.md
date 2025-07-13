@@ -64,7 +64,7 @@ This part consists of melting the **threaded heat-set inserts** (M2) into the [X
 ---
 
 ### PCB-Layout
-<img src="assets/pcb_design" width=600 />
+<img src="assets/pcb_design.png" width=600 />
 
 ---
 
