@@ -11,7 +11,7 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., en
 ### Core Modules
 
 * 1x [ESP32-DEVKIT-V1](https://de.aliexpress.com/item/1005006128432036.html?spm=a2g0o.productlist.main.1.36c150d9Vynner&algo_pvid=f1c66e43-4416-4eb8-ad0a-b9c25d05ed2b&algo_exp_id=f1c66e43-4416-4eb8-ad0a-b9c25d05ed2b-0&pdp_ext_f=%7B%22order%22%3A%22461%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21EUR%212.14%211.75%21%21%2117.55%2114.36%21%40210385bb17523962162358814e4418%2112000046958263336%21sea%21DE%216233624885%21X&curPageLogUid=PHptQbbetuGY&utparam-url=scene%3Asearch%7Cquery_from%3A) (30-Pin)
-* 1x X27168 Stepper Motor
+* 1x [X27168 Stepper Motor](https://de.aliexpress.com/item/1005001661473145.html?spm=a2g0o.productlist.main.1.5b1e7249E1hdXX&algo_pvid=ca190c73-cd1b-4d43-8954-def95e9eff1c&algo_exp_id=ca190c73-cd1b-4d43-8954-def95e9eff1c-0&pdp_ext_f=%7B%22order%22%3A%227%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21EUR%212.32%211.49%21%21%212.65%211.70%21%402103849717523962718252836e21f9%2112000017032540183%21sea%21DE%216233624885%21X&curPageLogUid=fd8ccaZ4X9Gl&utparam-url=scene%3Asearch%7Cquery_from%3A)
 
 ### Power Supply
 
