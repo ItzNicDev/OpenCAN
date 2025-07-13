@@ -59,13 +59,12 @@ This part consists of melting the **threaded heat-set inserts** (M2) into the [X
 ## ⚡️ Custom OpenCAN PCB
 ### Schematic
 
-<img src="assets/schematic.png" width=400 />
+<img src="assets/schematic.png" width=600 />
 
 ---
 
 ### PCB-Layout
-
-![PCB Design](assets/pcb_design.png)
+<img src="assets/pcb_design" width=600 />
 
 ---
 
