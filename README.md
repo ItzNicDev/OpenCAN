@@ -72,6 +72,7 @@ Take your unit from before and carefully lift the plastic sheet scale at one of 
 Now that the plastic sheet scale has been removed, 2 screws will appear. Unscrew these and you will notice that the circuit board (white), the plastic cage (black plastic with conical top in the middle) and the rear brass part are now separated from each other. The brass part is no longer important for us and has no further use.
 
 <img src="assets/without_lid.png" width=400 />
+<img src="assets/copper_plastic_pcb.png" width=400 />
 
 ---
 
