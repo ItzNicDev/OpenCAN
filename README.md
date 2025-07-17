@@ -59,7 +59,7 @@ Of course, there are several ways to make a cover for the A-pillar. In the follo
 ### Molding via wire
 Grab a wire that is easy to bend (copper, aluminum) and bend it around the A-pillar at fixed intervals. Stick the pieces of wire onto a sheet of paper with adhesive tape and scan it with a scanner. In the CAD program of your choice, you can arrange and draw the sides scanned by the scanner at the previously fixed distances.
 
-<img src="assets/copper_wires.png" height=200 />
+<img src="assets/copper_wires.png" allign=right height=200 />
 
 ---
 
