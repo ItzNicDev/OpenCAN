@@ -8,8 +8,8 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 
 ## 📑 Table of Contents
 1. 🧰 Hardware Components
-2. 🧊 Prepare 3D Printed Parts
-3. 🏛️ Custom A-pillar trim
+2. 🏛️ Custom A-pillar trim
+3. 🧊 Prepare 3D Printed Parts
 4. 🪚 Prepare Gauge Enclosure
 5. ⚡️ Custom OpenCAN PCB
 ---
@@ -36,19 +36,7 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 * 1x [Custom OpenCAN PCB](#-pcb-layout) (See [Gerber Files](gerber_files) for further information)
 * 1x [Guage Enclosure](https://de.aliexpress.com/item/1005007197636240.html?src=google&pdp_npi=4%40dis!EUR!21.24!10.69!!!!!%40!12000039773227749!ppc!!!&snpsid=1&snps=y&albch=shopping&acnt=272-267-0231&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&=&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=de1005007197636240&ds_e_product_merchant_id=5551326180&ds_e_product_country=DE&ds_e_product_language=de&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=20536662168&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_campaignid=19235627944)
 
-### 🧊3D Printed Parts
-* 1x [Gauge Cup](3D_models/Suzuki_Swift_Sport/Gauge_Cup.3mf) (you don't own a suzuki swift sport, no problem - jump straight to "🏛️ Custom A-pillar trim")
-* 1x [Gauge Adapter Ring](3D_models/gauge_adapter_ring.3mf)
-* 1x [X27168 Adapter Plate](3D_models/x27168_adapter_plate.3mf)
 
-Don’t have a 3D printer? No problem! Services like [JLCPCB](https://jlc3dp.com/3d-printing-quote) now offer 3D printing too – you can upload the models directly and have them printed and shipped to you. Just make sure to choose a heat-resistant material since temperatures inside a car can get pretty high, especially in summer.
-
----
-
-## 🧊 Prepare 3D Printed Adapter Plate
-This part consists of melting the **threaded heat-set inserts** (M2) into the [X27168 adapter plate](3D_models/x27168_adapter_plate.3mf) both top and bottom and mounting the **X27168** step motor with the **M2 screws**.
-
-<img src="assets/assembly_stepper_mount.png" width=400/>
 
 ---
 ## 🏛️ Custom a-pillar trim
@@ -72,6 +60,20 @@ An app called [Scaniverse](https://scaniverse.com/) is required for this approac
 <img src="assets/gauge_reference_size.png" width=400/>
 
 ---
+
+## 🧊3D Printed Parts
+* 1x [Gauge Cup](3D_models/Suzuki_Swift_Sport/Gauge_Cup.3mf) (you don't own a suzuki swift sport, no problem - jump straight to "🏛️ Custom A-pillar trim")
+* 1x [Gauge Adapter Ring](3D_models/gauge_adapter_ring.3mf)
+* 1x [X27168 Adapter Plate](3D_models/x27168_adapter_plate.3mf)
+
+Don’t have a 3D printer? No problem! Services like [JLCPCB](https://jlc3dp.com/3d-printing-quote) now offer 3D printing too – you can upload the models directly and have them printed and shipped to you. Just make sure to choose a heat-resistant material since temperatures inside a car can get pretty high, especially in summer.
+
+---
+
+### 🧊 Prepare 3D Printed Adapter Plate
+This part consists of melting the **threaded heat-set inserts** (M2) into the [X27168 adapter plate](3D_models/x27168_adapter_plate.3mf) both top and bottom and mounting the **X27168** step motor with the **M2 screws**.
+
+<img src="assets/assembly_stepper_mount.png" width=400/>
 
 ## 🪚 Prepare Gauge Enclosure
 Remove the nuts marked in the picture
