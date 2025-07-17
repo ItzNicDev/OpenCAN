@@ -37,7 +37,7 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 * 1x [Guage Enclosure](https://de.aliexpress.com/item/1005007197636240.html?src=google&pdp_npi=4%40dis!EUR!21.24!10.69!!!!!%40!12000039773227749!ppc!!!&snpsid=1&snps=y&albch=shopping&acnt=272-267-0231&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&=&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=de1005007197636240&ds_e_product_merchant_id=5551326180&ds_e_product_country=DE&ds_e_product_language=de&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=20536662168&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_campaignid=19235627944)
 
 ### 🧊3D Printed Parts
-* 1x [Gauge Cup](3D_models/Suzuki_Swift_Sport/Gauge_Cup.3mf)
+* 1x [Gauge Cup](3D_models/Suzuki_Swift_Sport/Gauge_Cup.3mf) (you don't own a suzuki swift sport, no problem - jump straight to "🏛️ Custom A-pillar trim")
 * 1x [Gauge Adapter Ring](3D_models/gauge_adapter_ring.3mf)
 * 1x [X27168 Adapter Plate](3D_models/x27168_adapter_plate.3mf)
 
