@@ -49,7 +49,7 @@ Of course, there are several ways to make a cover for the A-pillar. In the follo
 Grab a wire that is easy to bend (copper, aluminum) and bend it around the A-pillar at fixed intervals. Stick the pieces of wire onto a sheet of paper with adhesive tape and scan it with a scanner. In the CAD program of your choice, you can arrange and trace the wires scanned by the scanner at the previously fixed distances.
 
 <img src="assets/copper_wires.png"  height=400 />
-
+<img src="assets/skelleton_trim.png" height=400>
 
 ### Molding via 3D-Scan
 An app called [Scaniverse](https://scaniverse.com/) is required for this approach. To make it easier for the app to scan or track the A-pillar, it is recommended to apply painter's tape to the surface to be scanned and to apply crosses with a black marker. Export the finished 3D model as an obj file and shape the A-pillar cover in any CAD program using the 3D model as a guide.
