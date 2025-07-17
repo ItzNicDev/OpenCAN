@@ -102,7 +102,7 @@ Now that the plastic sheet scale has been removed, 2 screws will appear. Unscrew
 
 Now the plastic sheet scale, the plastic cage (black plastic with conical top in the middle) and the pcb (background lighting) can be combined with the previously assembled adapter plate.
 
-<img src="" width=400 />
+<img src="assets/build_process.gif" width=400 />
 
 ---
 
