@@ -56,6 +56,8 @@ You may have noticed that the Gauge Cup is only available for the [Suzuki Swift 
 
 Of course, there are several ways to make a cover for the A-pillar. In the following, however, I will limit myself to the following:
 <img src="assets/copper_wires.png" align=right height=200 />
+<br clear="left"/>
+
 
 ### Molding via wire
 
