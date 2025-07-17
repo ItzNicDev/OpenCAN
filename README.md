@@ -62,7 +62,7 @@ An app called [Scaniverse](https://scaniverse.com/) is required for this approac
 ---
 
 ## 🧊3D Printed Parts
-* 1x [Gauge Cup](3D_models/Suzuki_Swift_Sport/Gauge_Cup.3mf) (you don't own a suzuki swift sport, no problem - jump straight to "🏛️ Custom A-pillar trim")
+* 1x [Gauge Cup](3D_models/Suzuki_Swift_Sport/Gauge_Cup.3mf) (you don't own a suzuki swift sport, see "🏛️ Custom A-pillar trim")
 * 1x [Gauge Adapter Ring](3D_models/gauge_adapter_ring.3mf)
 * 1x [X27168 Adapter Plate](3D_models/x27168_adapter_plate.3mf)
 
