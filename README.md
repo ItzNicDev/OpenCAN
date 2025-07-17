@@ -9,8 +9,9 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 ## 📑 Table of Contents
 1. 🧰 Hardware Components
 2. 🧊 Prepare 3D Printed Parts
-3. 🪚 Prepare Gauge Enclosure
-4. ⚡️ Custom OpenCAN PCB
+3. 🏛️ Custom a-pillar trim
+4. 🪚 Prepare Gauge Enclosure
+5. ⚡️ Custom OpenCAN PCB
 ---
 
 ## 🧰 Hardware Components
@@ -49,6 +50,14 @@ This part consists of melting the **threaded heat-set inserts** (M2) into the [X
 
 <img src="assets/assembly_stepper_mount.png" width=400/>
 
+---
+## 🏛️ Custom a-pillar trim
+You may have noticed that the Gauge Cup is only available for the [Suzuki Swift Sport](3D_models/Suzuki_Swift_Sport/Gauge_Cup.3mf). This is because it would be impossible for me as a single person to cover a wide range of vehicles. That's why I only decided to draw such a gauge cup for my car. But in the following I will explain how to make your own gauge cup with simple household tools.
+
+Of course, there are several ways to make a cover for the A-pillar. In the following, however, I will limit myself to the following:
+
+### Molding via wire
+Grab a wire that is easy to bend (copper, aluminum) and bend it around the A-pillar at fixed intervals. Stick the pieces of wire onto a sheet of paper with adhesive tape and scan it with a scanner. In the CAD program of your choice, you can arrange and draw the sides scanned by the scanner at the previously fixed distances.
 ---
 
 ## 🪚 Prepare Gauge Enclosure
