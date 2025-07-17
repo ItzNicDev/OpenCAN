@@ -57,6 +57,7 @@ An app called [Scaniverse](https://scaniverse.com/) is required for this approac
 <img src="assets/3d_model.gif" height=400/> 
 
 ⚠️Important: to ensure that the provided [gauge adapter ring](3D_models/gauge_adapter_ring.3mf) and the [X27168 adapter plate](3D_models/x27168_adapter_plate.3mf) fit, make sure that the hole for the gauge (blue area in the picture below) in the gauge cup has a diameter of 55.15mm or a radius of 27.575mm.
+
 <img src="assets/gauge_reference_size.png" width=400/>
 
 ---
