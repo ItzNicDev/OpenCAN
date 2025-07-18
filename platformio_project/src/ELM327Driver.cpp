@@ -11,24 +11,23 @@ ELM327Driver::ELM327Driver(uint8_t adress[6])
 
 bool bluetoothConfigured = false;
 
-char* str_rm_ws(char* str) {
-  if (str == nullptr) {
-    return nullptr;
-  }
+// char* str_rm_ws(char* str) {
+//   if (str == nullptr) {
+//     return nullptr;
+//   }
 
-  int i = 0;
-  int j = 0;
-  while (str[i] != '\0') {
-    if (str[i] != ' ') {
-      str[j] = str[i];
-      j++;
-    }
-    i++;
-  }
-  str[j] = '\0';
-  return str;
-}
-
+//   int i = 0;
+//   int j = 0;
+//   while (str[i] != '\0') {
+//     if (str[i] != ' ') {
+//       str[j] = str[i];
+//       j++;
+//     }
+//     i++;
+//   }
+//   str[j] = '\0';
+//   return str;
+// }
 
 float ELM327Driver::getResponse(ObdSensorType obdSensorType)
 {
@@ -56,45 +55,26 @@ float ELM327Driver::getResponse(ObdSensorType obdSensorType)
                     {
                         response[index++] = c;
                     }
+                    else
+                    {
+                        // Buffer full, terminate string and break to avoid overflow
+                        response[sizeof(response) - 1] = '\0';
+                        Serial.println("Warning: OBD response too long, truncated!");
+                        break;
+                    }
                 }
             }
+            ObdUtils obdUtils;
 
             Serial.println("Before transforming " + String(response));
 
-            const char* responseWithoutWhitespace =  str_rm_ws(response); // removing white spaces
-            Serial.println("After transforming " + String(responseWithoutWhitespace));
+            float decodedResponse =  obdUtils.decodeSensorValue(response, obdSensorType);
+            Serial.println(decodedResponse);
 
-            ObdUtils obdUtils;
-            size_t len = 11;
-
-            char high[3];
-            char low[3];
-
-            const char *extractedValue = nullptr;
-            float parsedValue = 0;
-
-            if (obdSensorType == ObdSensorType::Boost)
-            {
-                Serial.println("len: " + String(len));
-                strncpy(low, &responseWithoutWhitespace[len - 2], 2);
-                low[2] = '\0';
-                Serial.println("low " + String(low));
-                Serial.println("Parsed " + String(obdUtils.hexToDecimal(low) / 100));
-                return obdUtils.hexToDecimal(low) / 100;
-            }
-            else if (obdSensorType == ObdSensorType::Rpm)
-            {
-                strncpy(low, &responseWithoutWhitespace[len - 2], 2);
-                low[2] = '\0';
-                strncpy(high, &responseWithoutWhitespace[len - 4], 2);
-                high[2] = '\0';
-                return ((256 * obdUtils.hexToDecimal(high)) + obdUtils.hexToDecimal(low)) / 4;
-            }
-            else
-            {
-                return 0;
-            }
+            return decodedResponse; // <-- ADD THIS LINE!
         }
+        // If no response available, return 0
+        return 0; // <-- ADD THIS LINE!
     }
     else
     {
