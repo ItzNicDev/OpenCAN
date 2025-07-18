@@ -115,7 +115,7 @@ Now the plastic sheet scale, the plastic cage (black plastic with conical top in
 
 ### PCB
 <img src="assets/open_can_custom_pcb.png" width=400 />
-
+<img src="assets/connection_guid.png" width=400 />
 ---
 
 ### Ordering
