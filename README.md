@@ -44,7 +44,6 @@ You may have noticed that the Gauge Cup is only available for the [Suzuki Swift 
 
 Of course, there are several ways to make a cover for the A-pillar. In the following, however, I will limit myself to the following:
 
-
 ### Molding via wire
 Grab a wire that is easy to bend (copper, aluminum) and bend it around the A-pillar at fixed intervals. Stick the pieces of wire onto a sheet of paper with adhesive tape and scan it with a scanner. In the CAD program of your choice, you can arrange and trace the wires scanned by the scanner at the previously fixed distances.
 
@@ -107,9 +106,6 @@ Now the plastic sheet scale, the plastic cage (black plastic with conical top in
 
 ---
 
-
-
-
 ## ⚡️ Custom OpenCAN PCB
 ### Schematic
 
@@ -117,19 +113,13 @@ Now the plastic sheet scale, the plastic cage (black plastic with conical top in
 
 ---
 
-### PCB-Layout
-<img src="assets/pcb_design.png" width=600 />
+### PCB
+<img src="assets/open_can_custom_pcb.png" width=400 />
 
 ---
 
 ### Ordering
 The custom pcb can be ordered from manufacturers such as [JLCPCB](https://cart.jlcpcb.com/quote?spm=Jlcpcb.Homepage.1006). In the case of [JLCPCB](https://cart.jlcpcb.com/quote?spm=Jlcpcb.Homepage.1006), it is recommended to choose the lead-free HASL for the surface finish for health reasons. The PCB color can also be selected, but this may incur additional costs. Also make sure that a PCB thickness of 1.6 mm is selected
-
----
-
-### Printed PCB
-
-<img src="assets/open_can_custom_pcb.png" width=400 />
 
 ---
 
