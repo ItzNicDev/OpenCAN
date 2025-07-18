@@ -116,6 +116,7 @@ Now the plastic sheet scale, the plastic cage (black plastic with conical top in
 ### PCB
 <img src="assets/open_can_custom_pcb.png" width=400 />
 <img src="assets/contact_guid.png" width=400 />
+
 ---
 
 ### Ordering
@@ -136,6 +137,12 @@ The custom pcb can be ordered from manufacturers such as [JLCPCB](https://cart.j
 │       ├── Buzzer
 │       └── Stepper Motor (X27168)
 ```
+
+---
+
+## 📟 Use different sensor
+
+
 
 ---
 
