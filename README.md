@@ -1,4 +1,4 @@
-<img src="assets/open_can-logo.png" />
+<img src="assets/opencan_logo.png" />
 
 ## 🔍 Project Overview
 
