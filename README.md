@@ -145,11 +145,6 @@ The custom pcb can be ordered from manufacturers such as [JLCPCB](https://cart.j
 ---
 
 ## 📟 Use different sensor
-
-platformio_project/src/ObdUtils.cpp#L19
-platformio_project/include/ObdSensorType.h
-platformio_project/include/ELM327Driver.h#L20
-
 Of course, it is also possible to read from sensors other than boost pressure or rpm. There is a detailed documentation on [Wikipedia](https://en.wikipedia.org/wiki/OBD-II_PIDs) which lists a number of sensors including PIDs and conversion formulas. OpenCAN is designed so that other sensor types can be added relatively easily. 
 
 To add a new sensor type you must first find the correct PID and the conversion formula. Now you have to define a new [sensor type](platformio_project/include/ObdSensorType.h). Next, the new sensor type must be specified in the [obdSensorHexMap](platformio_project/include/ELM327Driver.h#L20) with name and PID. Last but not least, [decodeSensorValue](platformio_project/src/ObdUtils.cpp#L19) must be extended by a case. This contains the handling of the decoding.
