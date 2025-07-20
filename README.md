@@ -7,7 +7,7 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 ---
 
 ## 📑 Table of Contents
-1. 🧰 Hardware Components
+1. [🧰 Hardware Components](#-hardware-components)
 2. 🏛️ Custom A-pillar trim
 3. 🧊 Prepare 3D Printed Parts
 4. 🪚 Prepare Gauge Enclosure
