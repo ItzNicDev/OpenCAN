@@ -10,11 +10,11 @@ OpenCAN is a microcontroller-based project that reads live OBD-II data (e.g., tu
 1. [🧰 Hardware Components](#-hardware-components)
 2. [🏛️ Custom A-pillar trim](#%EF%B8%8F-custom-a-pillar-trim)
 3. [🧊 Prepare 3D Printed Parts](#3d-printed-parts)
-4. 🪚 Prepare Gauge Enclosure
-5. ⚡️ Custom OpenCAN PCB
-6. 📟 Use different sensor
-7. 🔁 Pointer Movement Logic (Interpolation Algorithm)
-8. 🏃 Code-Flow-Diagram (for boost pressure)
+4. [🪚 Prepare Gauge Enclosure](#-prepare-gauge-enclosure)
+5. [⚡️ Custom OpenCAN PCB](#%EF%B8%8F-custom-opencan-pcb)
+6. [📟 Use different sensor](#-use-different-sensor)
+7. [🔁 Pointer Movement Logic (Interpolation Algorithm)](#-pointer-movement-logic-interpolation-algorithm)
+8. [🏃 Code-Flow-Diagram (for boost pressure)](#-code-flow-diagram-for-boost-pressure)
 ---
 
 ## 🧰 Hardware Components
